@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fashion Shop"
+        android:textSize="45dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center|top"/>
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/uniqlo_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/emailAddressInput"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:background="@drawable/login_input_decorator"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/login_input_decorator"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/registerLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/link"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:autoLink="none"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/resetPasswordLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="none"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="200dp"
+            android:text="Reset password"
+            android:textColor="@color/link"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/login_button_background"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login by Google"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/google_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/google_logo"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>
